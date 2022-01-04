@@ -1,0 +1,31 @@
+<div class="row my-5">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5 text-center">
+        <img height="400px" width="350px" src="http://localhost:3004/{{books.productImagePath}}" alt="">
+    </div>
+    <div class="col-lg-5 text-left">
+        <br><br><br>
+        <h1>{{books.name}}</h1><hr>
+        <h4> <u>Authers</u> : {{books.authers}}</h4>
+        <u>Genre</u> :  <b style="font-size: 18px;">{{books.genre.name}}</b><br>
+        <u>Price</u> :<b style="font-size: 18px;">Rs. {{books.price}}</b> <br>
+        
+            Select Qty:
+        <span>
+            <select name="" id="" #ingre_qty>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </span><br><br>
+
+        <button (click)="addTocart()" class="btn btn-warning">Add To Cart</button>
+    </div>
+    <div class="col-lg-1"></div>
+</div>
+<div style="margin: 5px;padding: 5px;">
+    <h3><u>Description :</u></h3>
+    <p style="text-align: justify;">{{books.description}}</p>
+</div>
